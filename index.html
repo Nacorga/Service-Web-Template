@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>Service Web Template</title>
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    
+    <div class="overlay"></div>
+
+    <!--NAVIGATION-->
+    <nav class="myNavbar">
+      <div class="container">
+        <div class="brand">
+          <a href="#"><img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg"><span>My brand</span></a>
+        </div>
+
+        <ul class="desktop">
+          <li id="nav1" class="desplazar" data-nivel="#about">About</li>
+          <li id="nav2" class="desplazar" data-nivel="#services">Services</li>
+          <li id="nav3" class="desplazar" data-nivel="#team">Team</li>
+          <li id="nav4" class="desplazar" data-nivel="#projects">Projects</li>
+          <li id="nav5" class="desplazar" data-nivel="#contact">Contact</li>
+        </ul>
+
+        <div class="mobile toggle">
+          <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+          <ul>
+            <li class="desplazar" data-nivel="#about"><p>About</p></li>
+            <li class="desplazar" data-nivel="#services"><p>Services</p></li>
+            <li class="desplazar" data-nivel="#team"><p>Team</p></li>
+            <li class="desplazar" data-nivel="#projects"><p>Projects</p></li>
+            <li class="desplazar" data-nivel="#contact"><p>Contact</p></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!--INTRO-->
+    <div class="container-fluid intro flex">
+      <div class="container">
+        <h1 class="desktop display-2 text-center"><kbd>This is a website</kbd></h1>
+        <h1 class="mobile display-3 text-center"><kbd>This is a website</kbd></h1>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <div id="about" class="container-fluid vPadding about reveal" data-nivel="nav1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="display-4 mb-4 desktop">Know us!</h2>
+            <h2 class="mobile mb-4">Know us!</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="containerBox">
+              
+              <ul class="mt-5 desktop">
+                <li><p>Step 1</p></li>
+                <li><p>Step 2</p></li>
+                <li><p>Step 3</p></li>
+                <li><p>Step 4</p></li>
+                <li><p>Step 5</p></li>
+              </ul>
+              
+              <ul class="mt-5 mobile-xs">
+                <li><p>Step 1</p></li>
+                <li><p>Step 2</p></li>
+                <li><p>Step 3</p></li>
+                <li><p>Step 4</p></li>
+                <li><p>Step 5</p></li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SERVICES-->
+    <div id="services" class="container-fluid vPadding services reveal" data-nivel="nav2" style="position: relative;">
+      <div class="container desktop">
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <h2 class="desktop display-4 mb-4">Design</h2>
+            <h2 class="mobile mb-4">Design</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+          <div class="col-md-6 flex">
+            <i class="fas fa-magic fa-9x"></i>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-6 flex">
+            <i class="fas fa-terminal fa-9x"></i>
+          </div>
+          <div class="col-md-6">
+            <h2 class="desktop display-4 mb-4">Development</h2>
+            <h2 class="mobile mb-4">Development</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <h2 class="desktop display-4 mb-4">Mobile apps</h2>
+            <h2 class="mobile mb-4">Mobile apps</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+          <div class="col-md-6 flex">
+            <i class="fas fa-mobile-alt fa-9x"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 flex">
+            <i class="fas fa-plug fa-9x"></i>
+          </div>
+          <div class="col-md-6">
+            <h2 class="desktop display-4 mb-4">Integration</h2>
+            <h2 class="mobile mb-4">Integration</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mobile">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h3 class="mb-4"><i class="fas fa-magic"></i> Design</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h3 class="mb-4"><i class="fas fa-terminal"></i> Development</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h3 class="mb-4"><i class="fas fa-mobile-alt"></i> Mobile apps</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="mb-4"><i class="fas fa-plug"></i> Integration</h3>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis facilisis velit. Donec feugiat magna metus, at fringilla turpis fringilla sit amet. Donec mollis nisl ac urna tincidunt eleifend. Donec imperdiet metus eu dolor accumsan commodo. Nunc at mi vitae nisi eleifend facilisis ac vel est. Nunc quis enim vestibulum, vulputate risus quis, ullamcorper lorem. Vestibulum finibus justo vel lacus pretium laoreet.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--TEAM-->
+    <div id="team" class="container-fluid team vPadding reveal" data-nivel="nav3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+
+            <div class="myCard">
+              <div class="avatar"></div>
+              <div class="cardBody">
+                <h5>John Doe</h5>
+                <p class="smaller">Front End Developer</p>
+                <p><a href="https://getbootstrap.com">https://getbootstrap.com</a></p>
+                <ul>
+                  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-stack-overflow"></i></a></li>
+                  <li><a href=""><i class="fab fa-codepen"></i></a></li>
+                  <li><a href=""><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <div class="myCard">
+              <div class="avatar"></div>
+              <div class="cardBody text-center">
+                <h5>John Doe</h5>
+                <p class="smaller">Back End Developer</p>
+                <p><a href="https://getbootstrap.com">https://getbootstrap.com</a></p>
+                <ul>
+                  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-stack-overflow"></i></a></li>
+                  <li><a href=""><i class="fab fa-codepen"></i></a></li>
+                  <li><a href=""><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <div class="myCard">
+              <div class="avatar"></div>
+              <div class="cardBody text-center">
+                <h5>John Doe</h5>
+                <p class="smaller">Full Stack Developer</p>
+                <p><a href="https://getbootstrap.com">https://getbootstrap.com</a></p>
+                <ul>
+                  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-stack-overflow"></i></a></li>
+                  <li><a href=""><i class="fab fa-codepen"></i></a></li>
+                  <li><a href=""><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--PROJECTS-->
+    <div id="projects" class="vPadding reveal" data-nivel="nav4">
+      <ul class="projects">
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></d></li>
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></div></li>
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></div></li>
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></div></li>
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></div></li>
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></div></li>
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></div></li>
+        <li><div class="ima"><p>Project Name<span class="small">Design & Development</span></p></div></li>
+      </ul>
+    </div>
+
+    <!--CONATCT-->
+    <div id="contact" class="container-fluid vPadding contact reveal" data-nivel="nav5">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-sm-6">
+              <input name="nombre" type="text" placeholder="Name..." id="campoNombre">
+            </div>  
+            <div class="col-md-6">
+              <input name="email" type="text" placeholder="Email..." id="campoEmail">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mt-80">
+              <textarea name="comentarios" rows="10" cols="100" placeholder="What's on your mind?" id="campoMensaje" maxlength="999"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mt-50">
+              <input type="submit" value="Send" class="boton">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="container-fluid vPadding footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>© [NaCorGa] 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
